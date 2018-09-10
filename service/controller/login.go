@@ -45,7 +45,7 @@ func PostLoginViewHandler(w http.ResponseWriter, r *http.Request) {
     if ok{
       // ログイン成功
       page.Title = "logined"
-      page.Message = "login success!"
+      page.Message = "login success! "
     } else {
       // ログイン失敗
       page.Title = "can't login"
