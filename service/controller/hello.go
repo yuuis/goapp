@@ -18,10 +18,6 @@ func HelloViewHandler(w http.ResponseWriter, r *http.Request) {
   page.Title = "hello"
   page.Message = "hello, go"
 
-  // セッション処理
-  // page.Count = 1 + data.GetIntSession(r, "count")
-  // data.SetIntSession(w, r, "count", page.Count)
-
   tmpl, err := common.ViewParse("./view/hello/hello.html")
   if err != nil {
     common.WriteErrorLog(config.DEBUG, err, nil)

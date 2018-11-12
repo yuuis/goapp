@@ -2,8 +2,6 @@ package model
 
 import (
   "log"
-  // "../../config"
-  // "../common"
   "../db"
 )
 
@@ -43,7 +41,6 @@ func GetUserPassword(name string) string {
   if err != nil {
     log.Fatal(err)    
   }
-  // row.Scan(&password)
 
   log.Println("pwd: ", password)
   return password
